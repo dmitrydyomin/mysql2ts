@@ -5,7 +5,7 @@ const mapTypes = (t: string) => {
   if (t.indexOf('char') !== -1 || t.indexOf('text') !== -1) {
     return 'string';
   }
-  if (t.indexOf('date') !== -1) {
+  if (t.indexOf('date') !== -1 || t === 'timestamp') {
     return 'Date';
   }
   return t;
